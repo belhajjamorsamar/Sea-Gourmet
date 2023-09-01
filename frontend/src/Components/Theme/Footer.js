@@ -39,10 +39,11 @@ const Footer = () => {
 												<path d="M9 5l7 7-7 7"></path>
 											</svg>
 										</span>
-                                        <Link to='/'>
-										HOME</Link>
+										<Link to="/">HOME</Link>
 									</li>
-									<li className="pb-4"> <span className="w-5 h-5 transform rotate-360 inline-block">
+									<li className="pb-4">
+										{' '}
+										<span className="w-5 h-5 transform rotate-360 inline-block">
 											<svg
 												fill="none"
 												stroke="currentColor"
@@ -53,9 +54,13 @@ const Footer = () => {
 												className="w-full h-full">
 												<path d="M9 5l7 7-7 7"></path>
 											</svg>
-										</span><Link to='/Products'>
-                                        PRODUCTS</Link></li>
-									<li className=" pb-4"> <span className="w-5 h-5 transform rotate-360 inline-block">
+										</span>
+										<Link to="/Products">PRODUCTS</Link>
+									</li>
+									
+									<li className="pb-4">
+										{' '}
+										<span className="w-5 h-5 transform rotate-360 inline-block">
 											<svg
 												fill="none"
 												stroke="currentColor"
@@ -66,9 +71,13 @@ const Footer = () => {
 												className="w-full h-full">
 												<path d="M9 5l7 7-7 7"></path>
 											</svg>
-										</span><Link to='/Apropos'>
-                                        A PROPOS</Link></li>
-									<li className="pb-4"> <span className="w-5 h-5 transform rotate-360 inline-block">
+										</span>
+										<Link to="/Apropos">ABOUT US</Link>
+										
+									</li>
+									<li className="pb-4">
+										{' '}
+										<span className="w-5 h-5 transform rotate-360 inline-block">
 											<svg
 												fill="none"
 												stroke="currentColor"
@@ -79,21 +88,9 @@ const Footer = () => {
 												className="w-full h-full">
 												<path d="M9 5l7 7-7 7"></path>
 											</svg>
-										</span><Link to="/Apropos"></Link>
-  ABOUT US</li>
-									<li className="pb-4">  <span className="w-5 h-5 transform rotate-360 inline-block">
-											<svg
-												fill="none"
-												stroke="currentColor"
-												strokeLinecap="round"
-												strokeLinejoin="round"
-												strokeWidth="2"
-												viewBox="0 0 24 24"
-												className="w-full h-full">
-												<path d="M9 5l7 7-7 7"></path>
-											</svg>
-										</span> <Link to='/Contact'>
-                                        </Link>CONTACT US</li>
+										</span>
+										<Link to="/Contact">CONTACT US</Link>
+									</li>
 								</ul>
 							</div>
 							<div className="mb-5"></div>

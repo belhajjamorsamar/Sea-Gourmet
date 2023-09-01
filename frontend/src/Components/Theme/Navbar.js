@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IonIcon } from '@ionic/react';
 import { menu } from 'ionicons/icons';
 import { FiX } from 'react-icons/fi';
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -32,25 +32,25 @@ const Navbar = () => {
         <div className={`md:flex ${open ? 'block' : 'hidden'} mt-4 md:mt-0`}>
           <ul className="md:flex md:items-center space-x-4 md:space-x-8">
             <li>
-              <a href="/link" className="text-lg hover:text-green-400 transition duration-300">
+              <Link to="/" className="text-lg hover:text-green-400 transition duration-300">
                 HOME
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/link" className="text-lg hover:text-green-400 transition duration-300">
+              <Link to="/Products" className="text-lg hover:text-green-400 transition duration-300">
                 PRODUCTS
-              </a>
+              </Link>
             </li>
            
             <li>
-              <a href="/link" className="text-lg hover:text-green-400 transition duration-300">
+              <Link  to="/Apropos" className="text-lg hover:text-green-400 transition duration-300">
                 ABOUT US
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="Home" className="text-lg hover:text-green-400 transition duration-300">
+              <Link to='/Contact' className="text-lg hover:text-green-400 transition duration-300">
                 CONTACT US
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
