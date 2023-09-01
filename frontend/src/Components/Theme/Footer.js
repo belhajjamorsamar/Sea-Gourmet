@@ -39,7 +39,7 @@ const Footer = () => {
 												<path d="M9 5l7 7-7 7"></path>
 											</svg>
 										</span>
-										<Link to="/">HOME</Link>
+										<Link to="/" className='hover:text-red-700'>HOME</Link>
 									</li>
 									<li className="pb-4">
 										{' '}
@@ -55,7 +55,7 @@ const Footer = () => {
 												<path d="M9 5l7 7-7 7"></path>
 											</svg>
 										</span>
-										<Link to="/Products">PRODUCTS</Link>
+										<Link to="/Products" className='hover:text-red-700'>PRODUCTS</Link>
 									</li>
 									
 									<li className="pb-4">
@@ -72,7 +72,7 @@ const Footer = () => {
 												<path d="M9 5l7 7-7 7"></path>
 											</svg>
 										</span>
-										<Link to="/Apropos">ABOUT US</Link>
+										<Link  className='hover:text-red-700' to="/Apropos">ABOUT US</Link>
 										
 									</li>
 									<li className="pb-4">
@@ -89,7 +89,7 @@ const Footer = () => {
 												<path d="M9 5l7 7-7 7"></path>
 											</svg>
 										</span>
-										<Link to="/Contact">CONTACT US</Link>
+										<Link to="/Contact" className='hover:text-red-700'>CONTACT US</Link>
 									</li>
 								</ul>
 							</div>
