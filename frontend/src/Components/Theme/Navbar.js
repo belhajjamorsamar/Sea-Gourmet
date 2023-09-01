@@ -41,11 +41,7 @@ const Navbar = () => {
                 PRODUCTS
               </a>
             </li>
-            <li>
-              <a href="/link" className="text-lg hover:text-green-400 transition duration-300">
-                A PROPOS
-              </a>
-            </li>
+           
             <li>
               <a href="/link" className="text-lg hover:text-green-400 transition duration-300">
                 ABOUT US
