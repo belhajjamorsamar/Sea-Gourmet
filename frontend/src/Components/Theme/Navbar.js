@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-white shadow-lg fixed w-full z-10">
       <div className="container mx-auto px-6 py-3 md:flex md:items-center md:justify-between">
         <div className="flex justify-between items-center">
           <img className="h-12 md:h-14 text-2xl md:text-3xl inline" src="/images/logo.svg" alt="logo" />
@@ -22,7 +22,7 @@ const Navbar = () => {
                 <FiX size={24} />
               </span>
             ) : (
-              <span onClick={toggleMenu} className="text-2xl cursor-pointer">
+              <span onClick={toggleMenu} className="text-2xl cursor-pointer"  style={{ color: 'black' }}>
                 <IonIcon icon={menu} name="menu" />
               </span>
             )}
