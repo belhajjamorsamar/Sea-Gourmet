@@ -1,7 +1,9 @@
-import MSG1 from '../assets/MSG1.png';
-import MSG2 from '../assets/MSG2.png';
-import MSG3 from '../assets/MSG3.png';
-import MSG4 from '../assets/MSG4.png';
+import MSG1 from '/assets/MSG1.svg';
+import MSG2 from './assets/MSG2.png';
+import MSG3 from './assets/MSG3.png';
+import MSG4 from '.../assets/MSG4.png';
+
+
 
 export default  [{
     title :'First Slider Image' ,
