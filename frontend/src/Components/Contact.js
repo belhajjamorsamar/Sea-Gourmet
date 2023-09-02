@@ -24,7 +24,7 @@ const Contact = () => {
 	const onSubmit = (data) => console.log(data);
 
 	return (
-		<div className="bg-gray-100 min-h-screen p-8  ">
+		<div className="bg-gray-100 min-h-screen p-8 pt-20 ">
 			<div className="xl:container mx-auto mb-8">
 				<div className="bg-green-800 relative py-16">
 					<div className="absolute inset-0 flex items-center justify-center">
