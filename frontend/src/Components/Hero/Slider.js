@@ -16,7 +16,7 @@ const Slider = (props) => {
 return () => clearInterval(interval);
 } ,[activeIndex]);
 	return (
-		<div className="slider-container">
+		<div id="slider-container" className='w-full overflow-hidden  h-[17vh] lg:h-[60vh] '>
 			<SliderContent activeIndex={activeIndex} imageSlider={imageSlider} />
 
 			<Arrows

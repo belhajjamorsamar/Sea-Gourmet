@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="bg-white shadow-lg fixed w-full z-10">
       <div className="container mx-auto px-6 py-3 md:flex md:items-center md:justify-between">
         <div className="flex justify-between items-center">
-          <img className="h-12 md:h-14 text-2xl md:text-3xl inline" src="/images/logo.svg" alt="logo" />
+          <img className="h-12 md:h-14 text-2xl md:text-3xl inline pl-20" src="/images/logo.svg" alt="logo" />
 
           <div className="md:hidden">
             {open ? (
@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
 
         <div className={`md:flex ${open ? 'block' : 'hidden'} mt-4 md:mt-0`}>
-          <ul className="md:flex md:items-center space-x-4 md:space-x-8">
+          <ul className="md:flex md:items-center space-x-4 md:space-x-8 pr-40 text-center">
             <li>
               <Link to="/" className="text-lg hover:text-green-400 transition duration-300">
                 HOME

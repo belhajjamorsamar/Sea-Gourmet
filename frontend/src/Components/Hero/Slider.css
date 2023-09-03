@@ -4,13 +4,11 @@
 }
 
 :root {
-	--heights: 50vh;
+	--heights: 60vh;
 	--widths: 100%;
 }
 
-.slider-container {
-	height: var(--heights);
-	width: var(--widths);
+#slider-container {	
 	position: relative;
 	margin: auto;
 	overflow: hidden;
@@ -91,5 +89,5 @@
 
 .active-dot ,
 .dot:hover{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(189, 8, 8, 0.5);
 }
