@@ -7,7 +7,7 @@ import Apropos from './Components/Apropos'
 import Contact from './Components/Contact'
 import Slider from './Components/Hero/Slider'
 import {Routes ,Route} from 'react-router-dom'
-
+import Cards from './Components/SeaProducts/Cards'
 const App = () => {
   return (
     <div>
@@ -19,6 +19,7 @@ const App = () => {
         <Route path="/Contact" element={<Contact/>}/>
       </Routes>
       <Slider/>
+      <Cards/>
       <Footer></Footer>
     </div>
   )
