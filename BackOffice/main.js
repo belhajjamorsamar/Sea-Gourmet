@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const session = require('express-session');
+const { Template } = require('ejs');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -42,3 +43,7 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server started at http://localhost:${PORT}`);
 });
+
+
+// set Template engin
+app.set('view engine' , 'ejs');
