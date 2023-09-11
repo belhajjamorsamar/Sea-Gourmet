@@ -9,8 +9,8 @@ const Login = () => {
 
 
 
-       <div id="image">
-        <img src=''>
+       <div id="image" className='w'>
+        <img  src="/images/logo.svg" alt=''/>
        </div>
 
        
