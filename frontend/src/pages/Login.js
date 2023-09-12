@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { AiFillEye } from 'react-icons/fa';
 const Login = () => {
 	return (
 		<div className=" bg-gray-100 min-h-screen flex items-center justify-center  ">
@@ -18,20 +18,41 @@ const Login = () => {
 
 					<form action="" className="flex flex-col gap-4">
 						<input className='p-2 mt-8 rounded-xl border' type="text" name="email" placeholder="Email" />
-						<input className='p-2 mt-8 rounded-xl border' type="password" name="password" placeholder="Password" />
-						<button className='bg-[#031e42] rounded-xl  text-white py-2 text'  > LogIn </button>
+						
+            
+            <div className='relative'>
+
+            <input className='p-2 mt-8 rounded-xl border w-full' type="password" name="password" placeholder="Password" />
+            
+            </div>
+
+
+						<button className='bg-[#031e42] rounded-xl  text-white py-2 text'> LogIn </button>
 					</form>
-<div className='mt-10 grid grid-cols-3 items-center text-gray-500'>
-  <hr className='border-gray-500'></hr>
-  <p className='text-center'>Or</p>
-  <hr className='border-gray-500'></hr>
-</div>
 
-				</div>
+         <div className='mt-10 grid grid-cols-3 items-center text-gray-500'>
+           <hr className='border-gray-500'></hr>
+           <p className='text-center text-sm'>Or</p>
+           <hr className='border-gray-500'></hr>
+         </div>
+
+         <button className='bg-white border py-2  w-full  rounded-xl mt-5 '>Login with google</button>
+           
+
+
+          
+         <p className='mt-10 text-xs border-b py-6'>Forget your Password ?</p>
+				<div className='mt-3 text-sm flex justify-between  items-center'>
+          <p>If you don't have an acount? </p>
+  
+          <button className='py-2 px-5 bg-white border rounded-xl '>Register</button>
+        </div>
+        
+        </div>
 
 
 
-				<div className=" w-1/2 sm:block hidden ">
+				<div className="w-1/2 sm:block hidden ">
 
 					<img src="/images/Admin2.jpg" alt="LoginImage" className="rounded-2xl" />
 
