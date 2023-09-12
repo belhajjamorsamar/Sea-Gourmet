@@ -8,7 +8,7 @@ const Login = () => {
 
 
 
-				<div className="sm:w-1/2 px-16">
+				<div className="md:w-1/2 px-16">
 
 					<h2 className="font-bold text-2xl text-[#031e42]">
                Login
@@ -43,7 +43,7 @@ const Login = () => {
           
          <p className='mt-10 text-xs border-b py-6'>Forget your Password ?</p>
 				<div className='mt-3 text-sm flex justify-between  items-center'>
-          <p>If you don't have an acount? </p>
+          <p>Don't have an acount? </p>
   
           <button className='py-2 px-5 bg-white border rounded-xl '>Register</button>
         </div>
@@ -52,7 +52,7 @@ const Login = () => {
 
 
 
-				<div className="w-1/2 sm:block hidden ">
+				<div className="w-1/2 md:block hidden ">
 
 					<img src="/images/Admin2.jpg" alt="LoginImage" className="rounded-2xl" />
 
