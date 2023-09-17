@@ -5,8 +5,14 @@ module.exports = {
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        glass:"rgba(255,255,255,0.25)",
+        brouwn : "rgb(30,30,17)"
+      }
+    },
   },
+  
   plugins: [],
 }
 
