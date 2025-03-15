@@ -1,21 +1,23 @@
-import MSG1 from './assets/MSG1.png'; // Assuming MSG1.svg is in the same directory as this file.
-import MSG2 from './assets/MSG2.png'; // Assuming MSG2.png is in the same directory as this file.
-import MSG3 from './assets/MSG3.png'; // Assuming MSG3.png is in the same directory as this file.
-import MSG4 from './assets/MSG4.png'; // Assuming MSG4.png is one directory above this file.
+// imageSlider.js
 
-export default [
-	{
-		urls: MSG1,
-	},
-	{
-		urls: MSG2,
-	},
+import MSG1 from './assets/MSG1.png'; // Assurez-vous que le chemin d'accès aux images est correct
+import MSG2 from './assets/MSG2.png';
+import MSG3 from './assets/MSG3.png';
+import MSG4 from './assets/MSG4.png';
 
-	{
-		urls: MSG3,
-	},
-
-	{
-		urls: MSG4,
-	},
+const imageSlider = [
+  {
+    url: MSG1,
+  },
+  {
+    url: MSG2,
+  },
+  {
+    url: MSG3,
+  },
+  {
+    url: MSG4,
+  },
 ];
+
+export default imageSlider;

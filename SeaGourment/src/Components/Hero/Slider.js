@@ -3,7 +3,7 @@ import SliderContent from './SliderContent';
 import imageSlider from './imageSlider';
 import Arrows from './Arrows';
 import Dots from './Dots';
-import "./Slider.css";
+import './Slider.css';
 
 const Slider = () => {
   const [activeIndex, setActiveIndex] = useState(0);

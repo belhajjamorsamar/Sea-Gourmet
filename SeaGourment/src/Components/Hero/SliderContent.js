@@ -1,23 +1,14 @@
+// SliderContent.js
+
 import React from 'react';
 
 const SliderContent = ({ activeIndex, imageSlider }) => {
+  const { url } = imageSlider[activeIndex]; // Accéder à l'URL de l'image du slider
+
   return (
-    <section className="relative w-full h-full overflow-hidden">
-      {imageSlider.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-            index === activeIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
-          }`}
-        >
-          <img
-            className="w-full h-full object-cover"
-            src={slide.urls}
-            alt={slide.alt || `Slide ${index + 1}`}
-          />
-        </div>
-      ))}
-    </section>
+    <div className="slider-content">
+      <img src={url} alt={`Slide ${activeIndex + 1}`} className="w-full h-full object-cover" />
+    </div>
   );
 };
 
