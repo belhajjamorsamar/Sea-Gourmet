@@ -10,7 +10,6 @@
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.15",
     "caniuse-lite": "^1.0.30001704",
-    "google-maps-react": "^2.0.6",
     "heroicons": "^2.0.18",
     "install": "^0.13.0",
     "ionicons": "^7.1.2",
