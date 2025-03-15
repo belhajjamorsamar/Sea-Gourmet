@@ -1,5 +1,6 @@
 import React from 'react';
 import {  } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
 	return (
@@ -31,7 +32,7 @@ const Login = () => {
 
 						<button className="bg-[#031e42] rounded-xl  text-white py-2 text hover:scale-105 duration-300 ">
 							{' '}
-							Login{' '}
+							<Link to="/menu">Login</Link>
 						</button>
 					</form>
 
@@ -51,7 +52,8 @@ const Login = () => {
 
 						
 						<button className="py-2 px-5 bg-white border rounded-xl hover:scale-105  duration-300">
-							Register
+						Register
+							
 						</button>
 						
 					</div>

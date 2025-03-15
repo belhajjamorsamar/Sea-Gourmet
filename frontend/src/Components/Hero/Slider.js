@@ -3,36 +3,40 @@ import SliderContent from './SliderContent';
 import imageSlider from './imageSlider';
 import Arrows from './Arrows';
 import Dots from './Dots';
-import "./Slider.css"
+import "./Slider.css";
 
-const len = imageSlider.length - 1;
+const Slider = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const len = imageSlider.length;
 
-const Slider = (props) => {
-	const [activeIndex, setActiveIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex === len - 1 ? 0 : prevIndex + 1));
+    }, 5000);
 
- useEffect (()=> 
- {const interval =() => setInterval(() => {setActiveIndex(activeIndex === len ? 0 : activeIndex + 1);
-},5000);
-return () => clearInterval(interval);
-} ,[activeIndex]);
-	return (
-		<div id="slider-container" className='w-full overflow-hidden  h-[17vh] lg:h-[60vh] '>
-			<SliderContent activeIndex={activeIndex} imageSlider={imageSlider} />
+    return () => clearInterval(interval); // Nettoyage de l'intervalle
+  }, [len]);
 
-			<Arrows
-				prevSlide={() =>
-					setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
-				}
-				nextSlide={() =>
-					setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
-				}
-			/>
+  const prevSlide = () => {
+    setActiveIndex((prevIndex) => (prevIndex === 0 ? len - 1 : prevIndex - 1));
+  };
 
-      <Dots activeIndex={activeIndex} imageSlider={imageSlider} onClick={activeIndex => setActiveIndex(activeIndex)}
+  const nextSlide = () => {
+    setActiveIndex((prevIndex) => (prevIndex === len - 1 ? 0 : prevIndex + 1));
+  };
 
-      />
-		</div>
-	);
+  return (
+    <div id="slider-container" className="w-full overflow-hidden h-[17vh] lg:h-[60vh]">
+      {/* Contenu des images */}
+      <SliderContent activeIndex={activeIndex} imageSlider={imageSlider} />
+
+      {/* Flèches */}
+      <Arrows prevSlide={prevSlide} nextSlide={nextSlide} />
+
+      {/* Points */}
+      <Dots activeIndex={activeIndex} imageSlider={imageSlider} onClick={(index) => setActiveIndex(index)} />
+    </div>
+  );
 };
 
 export default Slider;

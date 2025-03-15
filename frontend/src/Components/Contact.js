@@ -26,7 +26,7 @@ const Contact = () => {
 	return (
 		<div className="bg-gray-100 min-h-screen p-8 pt-20 ">
 			<div className="xl:container mx-auto mb-8">
-				<div className="bg-green-800 relative py-16">
+				<div className="bg-green-800 relative py-16 mt-25">
 					<div className="absolute inset-0 flex items-center justify-center">
 						<h1 className="text-4xl sm:text-7xl text-white font-serif">
 							Contact Us
@@ -34,7 +34,7 @@ const Contact = () => {
 					</div>
 				</div>
 
-				<div className="mt-14 md:px-8 lg:w-1/2 xl:w-1/2 mx-auto ">
+				<div className="mt-14 md:px-8 lg:w-1/2 xl:w-1/2 max-w-4xl mx-auto">
 					<div className="rounded-lg shadow-lg bg-white -mt-24 py-12 px-6">
 						<div className="grid grid-cols-2 gap-x-6 mb-12 mx-auto">
 							<Iconinfo

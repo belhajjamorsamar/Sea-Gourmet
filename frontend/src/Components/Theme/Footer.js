@@ -102,8 +102,8 @@ const Footer = () => {
 							</div>
 							<div className="mb-4"><h4 className='text-2xl pb-4'>About our company</h4>
                             <div className='flex justify-between'>
-                            <p >We are the exclusive importer and sourcing partner for many commodities such as fast moving consumer goods, petroleum, fresh vegetables and fruits, food and beverages, fresh seafood and all consumer products.</p>
-                            <img className="h-12 md:h-14 text-2xl md:text-3xl inline" src="/images/logo.svg" alt="logo" />                            </div>
+                            <p  className='text-sm '>We are the exclusive importer and sourcing partner for many commodities such as fast moving consumer goods, petroleum, fresh vegetables and fruits, food and beverages, fresh seafood and all consumer products.</p>
+                            <img className="h-12 md:h-14 lg:h-20 text-2xl md:text-3xl inline pl-1" src="/images/logo.svg" alt="logo" />                            </div>
 							</div>
 						</div>
 					</div>

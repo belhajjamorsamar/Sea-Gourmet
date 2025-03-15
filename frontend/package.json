@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "proxy" : "http://127.0.0.1:5000",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^1.0.0",
     "@ionic/react": "^7.3.2",

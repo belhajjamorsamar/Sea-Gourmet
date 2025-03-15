@@ -9,7 +9,7 @@ const Products = () => {
 				<div className="bg-green-800 relative py-16 ">
 					<div className="absolute inset-0 flex items-center justify-center">
 						<h1 className="text-4xl sm:text-7xl text-white font-serif">
-							Products / SEA FOOD
+							Products
 						</h1>
 					</div>
 

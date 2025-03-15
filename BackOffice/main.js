@@ -1,53 +1,36 @@
 // imports
 require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
-const session = require('express-session');
-const { Template } = require('ejs');
-
 const app = express();
-const PORT = process.env.PORT || 4000;
+const _PORT = process.env.PORT || 4000;
 
-// database connection
-mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
-const db = mongoose.connection;
-db.on('error', (error) => console.log(error));
-db.once('open', () => console.log('Connected to the database!'));
-
-
-
-//middlewares 
-app.use(express.urlencoded({extended : false}));
+//middlewares
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+// database connection
+mongoose
+	.connect(process.env.DB_URI, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+	})
+	.then(() => {
+		console.log('Connexion a mongodb réussie');
+	})
+	.catch((err) => {
+		console.error('Erreur de connexion à MongoDB réussie: ', err);
+	});
 
-app.use(session({
-  secret: 'my secret key',
-  saveUninitialized :true,
-  resave :false,
+//import User models
+const UserModel = require('./models/Users');
 
-
-}));
-
-app.use((req,res,next)=>{
-  res.locals.message = req.session.message;
-  delete req.session.message;
-  next();
-
-})
-
-// set Template engin
-app.set('view engine' , 'ejs');
-
-
-// route prefix
-app.use("",require('./routes/routes'))
-
-
-
-
-app.listen(PORT, () => {
-  console.log(`Server started at http://localhost:${PORT}`);
+app.get('/users', async (req, res) => {
+	const users = await UserModel.find();
+	res.json(users);
 });
 
-
+app.listen(_PORT, () => {
+	console.log(`Server started at http://localhost:${_PORT}`);
+});
